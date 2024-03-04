@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
+    <title><%=title%></title>
     <%- include('partials/homeStyle') %>
 </head>
 <body>
-    <h1>Hola, estás en el home.</h1>
-    <%- include('partials/navbar') %>
+    
+   
+    <div class="navbar">
+        <a class="active" href="#">Home</a>
+        <a href="/login">Login</a>
+        <a href="/registro">Registro</a>
+    </div>
+
+    <!-- Contenido de la página -->
+    <div class="texto">
+        <h2>Sitio WEB.</h2>
+        <p>Esta es la  página principal del sitio web.</p>
+    </div>
+
 </body>
 </html>
